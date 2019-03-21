@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Currency Calculator / Fullpage site.</title>
+    <link rel="stylesheet" href="calc.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <!--calculator currency - start-->
+      <h1>Currency Calculator</h1>
+      <form name="calculator" id="currencyForm">
+        <input
+          type="number"
+          class="trigger"
+          data-tooltip="#tip1"
+          id="amountCurrencyInput"
+        />
+
+        <select class="calcForm" id="firstCurrency" required>
+          <option value="PLN">PLN </option
+          ><option value="HRK">HRK </option
+          ><option value="BAM">BAM </option></select
+        >
+
+        <label class="calcForm">convert to</label>
+        <select class="calcForm" id="secondCurrency" required>
+          <option value="HRK">HRK </option
+          ><option value="BAM">BAM </option
+          ><option value="PLN">PLN </option></select
+        >
+      </form>
+      <div class="writtenResults">
+        <p>
+          <span class="amount"></span>
+          <span class="firstResultCurrency"></span>
+          <span class="result"></span>
+          <span class="secondResultCurrency"></span>
+        </p>
+      </div>
+    </header>
+    <button name="calculateCurrency" class="calculateCurrency">
+      Calculate
+    </button>
+    <!--calculator currency - end-->
+    <!--    label screen input start-->
+    <div class="tooltip" id="tip1">
+      <p>Type in value</p>
+    </div>
+    <!--    jQuery CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <!--    label screen input end-->
+    <script src="js/trigger.js"></script>
+    <script src="js/calc.js"></script>
+    <script src="js/screenLabel.js"></script>
+  </body>
+</html>

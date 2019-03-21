@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: tahoma, arial;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-image: url("img/currencyBackground.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  height: 25vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+label {
+  color: #dddddd;
+  font-size: 1.5rem;
+}
+/*result in paragraph and h1*/
+h1,
+.writtenResults p {
+  font-size: 2rem;
+  color: #dddddd;
+  text-align: center;
+}
+/*button*/
+.calculateCurrency {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 20rem;
+  height: 3.5rem;
+  padding: 0.5rem;
+  background-color: #cc5911;
+  font-size: 2rem;
+  color: #dddddd;
+  border: 0.03rem solid #411f0a;
+  /* button align - center - start*/
+  margin-top: -1.75rem;
+  margin-left: -10rem;
+  /* button align - center - end*/
+}
+/*form design start*/
+.trigger {
+  cursor: help; /*cursor with help sign*/
+}
+/*screen label start*/
+.tooltip {
+  /*    display: none;     we did in jq ->hide screen label*/
+  width: 25%;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid rgb(195, 151, 51);
+  border-radius: 10px;
+}
+/*screen label end*/
